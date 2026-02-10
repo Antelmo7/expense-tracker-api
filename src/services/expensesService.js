@@ -210,6 +210,8 @@ export async function getByDate(userId, page = 1, limit = 10, startDate, endDate
     page,
     pageItems,
     totalItems,
-    totalPages
+    totalPages,
+    startDate,
+    endDate
   }
 }
