@@ -113,3 +113,5 @@ const logger = pino(config);
 
 export default logger;
 ```
+
+Solution for the [Expense Tracker API](https://roadmap.sh/projects/expense-tracker-api) challenge from [roadmap.sh](https://roadmap.sh)
