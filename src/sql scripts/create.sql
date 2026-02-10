@@ -14,5 +14,5 @@ CREATE TABLE IF NOT EXISTS expenses (
 	amount FLOAT(2) NOT NULL,
 	category expenseCategory default 'Others',
 	userId INT REFERENCES users(userId),
-	createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+	createdAt TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

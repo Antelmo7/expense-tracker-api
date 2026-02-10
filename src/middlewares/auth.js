@@ -1,5 +1,7 @@
+import jwt from 'jsonwebtoken';
+
 export default async function authenticateToken(req, res, next) {
-  const token = req.header('Auhorization')?.split(' ')[1];
+  const token = req.header('Authorization')?.split(' ')[1];
 
   if (!token) {
     const error = new Error('No token provided');
